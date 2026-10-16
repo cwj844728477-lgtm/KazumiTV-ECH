@@ -29,7 +29,7 @@ flutter build apk --release --flavor tv --target-platform android-arm --dart-def
 
 ## 测试与验收边界
 
-原本地构建曾完成 ARMv7/签名/安装检查及隔离逻辑测试；它不等于本次公开整理后的全量构建通过。公开整理主要修复源代码归档清单、移除非公开美术和增加说明，`lib/` 业务源码保持不变。
+原本地构建曾完成 ARMv7/签名/安装检查及隔离逻辑测试；它不等于本次公开整理后的全量构建通过。公开整理仅从原归档的应用目录提取源码、移除非公开美术并增加说明，`lib/` 业务源码保持不变。
 
 依赖 `ech_http` 的 native-assets hook 可能使 Windows 上的直接 `flutter test` 要求 Visual Studio C++；Android 打包不因此必然需要整个 Visual Studio。不要用未执行的测试结果替代实际输出。
 
