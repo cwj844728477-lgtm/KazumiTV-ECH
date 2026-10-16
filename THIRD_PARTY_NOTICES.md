@@ -6,6 +6,6 @@
 
 本应用使用 Xiaomi Inc. 的 MiSans Fonts，保留原字体且未修改；[官方协议原文](third-party/native/MiSans-License.en.txt)及署名可在应用许可证页查看。字体遵守自身协议，不随项目重新许可。
 
-本公开衍生项目名为 KazumiTV-ECH，基于 znbsf/KazumiTV 提交 554114bd444c0fea2a3c0c59557a63c99309810b。保留上游 GPL-3.0 代码许可和第三方归属。公开源码使用 znbsf TV 分支原有的几何图标，不包含 Kazumi 的 Yuquanaaa 人物图标；人物图标并非自由授权素材，原声明保存在 static/doc/UPSTREAM_FLUTTER_README.md。此前个人本地测试包所用人物图标不随本仓库分发，本仓库不声称获得该美术资源的独立分发授权。
+本公开衍生项目名为 KazumiTV-ECH，基于 znbsf/KazumiTV 提交 554114bd444c0fea2a3c0c59557a63c99309810b。保留上游 GPL-3.0 代码许可和第三方归属。公开版本使用 AI 生成、经维护者选定的若叶睦非官方二创头像，详情见 [头像来源说明](docs/AVATAR-PROVENANCE.md)。不包含 Kazumi 的 Yuquanaaa 人物图标；人物图标并非自由授权素材，原声明保存在 static/doc/UPSTREAM_FLUTTER_README.md。此前个人本地测试包所用人物图标不随本仓库分发，本仓库不声称获得该美术资源的独立分发授权。
 
 节目海报为运行时在线资料，媒体及服务归相应权利人，本项目不托管影视资源。原生自制测试素材、OkHttp Public Suffix List 等历史说明和原文保留在 native-history 及[原生固定提交](https://github.com/znbsf/KazumiTV/tree/24bc50ef47af5e32907ed54413e1eb33c1fb601e)。

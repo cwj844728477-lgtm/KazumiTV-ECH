@@ -1,5 +1,7 @@
 # KazumiTV-ECH
 
+<img src="website/assets/avatar.png" width="144" alt="若叶睦非官方二创头像">
+
 面向个人家庭电视使用的 **非官方 Android TV 修改版**。基于 [znbsf/KazumiTV](https://github.com/znbsf/KazumiTV)，上游为 [Predidit/Kazumi](https://github.com/Predidit/Kazumi)。不是上述项目或弹弹play的官方客户端。
 
 [项目主页](https://cwj844728477-lgtm.github.io/KazumiTV-ECH/) · [问题反馈](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/issues) · [构建说明](BUILDING.md) · [来源与许可](THIRD_PARTY_NOTICES.md)
@@ -13,7 +15,8 @@
 - **源码已公开，弹弹play应用授权尚未取得，正在准备申请。** 无授权构建不能正常搜索或加载弹幕，不应将已有接口代码视为已获服务授权。
 - 本地 ARMv7 测试构建已完成模拟器安装及部分功能检查；尚未完成 TCL 电视无代理网络下的完整验收，不保证全部网络环境均可用。
 - 本次公开整理仅使用归档中的 `KazumiTV/` 应用目录，保持完整应用 `pubspec.yaml` / `pubspec.lock`，不混入独立测试工程；排除本机辅助脚本、私有配置和上游 CI，未改动 `lib/` 业务源码。
-- 公开版使用 TV 分支原有几何图标，不分发授权范围不明确的 Kazumi 人物图标。**当前没有发布公开 APK。**
+- 公开测试版使用经维护者确认的 AI 生成若叶睦二创头像，不使用 Kazumi 原人物图标。头像不代表 BanG Dream! 官方授权或背书。
+- **ARMv7 安装包、对应源码和校验文件见 [Releases](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/releases/tag/v0.4.2-ech.20394)。** 这是非官方预发布测试包，使用本机 debug 证书签名。
 
 ## 功能与运行方式
 

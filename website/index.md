@@ -5,6 +5,8 @@ title: KazumiTV-ECH
 
 # KazumiTV-ECH
 
+<img src="assets/avatar.png" width="144" alt="若叶睦非官方二创头像">
+
 **个人家庭电视使用的非官方 Android TV 开源修改版**
 
 保留 TV 遥控器交互，增加 ARMv7 兼容与 ECH 网络支持。基于 [znbsf/KazumiTV](https://github.com/znbsf/KazumiTV) 及 [Predidit/Kazumi](https://github.com/Predidit/Kazumi)，不是两者或弹弹play的官方产品。
@@ -30,13 +32,17 @@ title: KazumiTV-ECH
 
 ## 测试与发布状态
 
-原本地 ARMv7 测试包已进行模拟器安装和部分功能验证；尚未完成目标电视无代理网络下的完整验收。**本仓库目前发布源码和说明，不提供公开 APK，也不承诺所有设备/网络均可用。**
+原本地 ARMv7 测试包已进行模拟器安装和部分功能验证；尚未完成目标电视无代理网络下的完整验收。**现提供非官方 ARMv7 预发布测试 APK，使用 debug 证书签名，不承诺所有设备/网络均可用。**
+
+[下载安装包与对应源码（v0.4.2-ech.20394）](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/releases/tag/v0.4.2-ech.20394)
+
+应用 ID：`org.localtest.kazumitv.ech`；versionCode：`20394`。保留已能使用的原版，不要为安装测试包先卸载旧应用。
 
 ## 来源与许可
 
 TV 基线提交：`554114bd444c0fea2a3c0c59557a63c99309810b`。
 
-代码遵循 [GPL-3.0](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/LICENSE)，第三方资源依其各自许可，详见 [归属声明](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/THIRD_PARTY_NOTICES.md)。公开版使用原 TV 分支几何图标，不分发 Kazumi 人物图标。
+代码遵循 [GPL-3.0](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/LICENSE)，第三方资源依其各自许可，详见 [归属声明](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/THIRD_PARTY_NOTICES.md)。公开版使用 AI 生成的若叶睦非官方二创头像，不分发 Kazumi 原人物图标。角色与原作权利归相应权利人，不代表原作方授权或背书。
 
 ## 隐私与联系
 

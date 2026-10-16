@@ -5,7 +5,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.software.gamepad" android:required="false" />
     <application android:label="${kazumiTvLabel}" android:banner="@drawable/tv_banner"
-        android:icon="@drawable/kazumitv_mark" tools:replace="android:icon,android:label">
+        android:icon="@drawable/wakaba_avatar" tools:replace="android:icon,android:label">
         <activity android:name=".MainActivity" android:enableOnBackInvokedCallback="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

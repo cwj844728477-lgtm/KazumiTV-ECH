@@ -29,7 +29,7 @@ flutter build apk --release --flavor tv --target-platform android-arm --dart-def
 
 ## 测试与验收边界
 
-原本地构建曾完成 ARMv7/签名/安装检查及隔离逻辑测试；它不等于本次公开整理后的全量构建通过。公开整理仅从原归档的应用目录提取源码、移除非公开美术并增加说明，`lib/` 业务源码保持不变。
+v0.4.2-ech.20394 已完成 release TV ARMv7 构建、ZIP/ELF/签名/16KB zipalign 检查、APK 图标解码像素比对，以及 MuMu 模拟器覆盖安装、启动与方向键焦点移动检查。429 个 `lib/` 文件及 8 个原生库均与之前的 20393 测试包对应源码/库保持不变；更新仅涉及图标资源、版本号与说明。未重跑全量 Flutter/native 单元测试，也未完成 TCL 真机无代理网络验收。
 
 依赖 `ech_http` 的 native-assets hook 可能使 Windows 上的直接 `flutter test` 要求 Visual Studio C++；Android 打包不因此必然需要整个 Visual Studio。不要用未执行的测试结果替代实际输出。
 

@@ -1,0 +1,32 @@
+{
+  "apk": "KazumiTV-ECH-0.4.2-20394-armeabi-v7a.apk",
+  "sha256": "d53ff3b9b8b41544d19993c44ce1e9a2287e1db4c173ae1cca62a4dbdbf3d42a",
+  "bytes": 30568599,
+  "versionCode": 20394,
+  "package": "org.localtest.kazumitv.ech",
+  "abi": [
+    "armeabi-v7a"
+  ],
+  "lib_files_unchanged": 429,
+  "native_libraries": 8,
+  "changed_native_libraries": [],
+  "signature_matches_previous": true,
+  "avatar_pixel_match": true,
+  "avatar_resource_id": "0x7f0700e8",
+  "avatar_resource_paths": [
+    "res/-K.png"
+  ],
+  "tv_launch_entry": true,
+  "zip_integrity": true,
+  "zipalign": true,
+  "danmaku_credentials": "not_injected",
+  "device_testing": {
+    "emulator": "MuMu",
+    "upgrade_install": "Success",
+    "launch": "Status: ok",
+    "installed_versionCode": 20394,
+    "dpad_focus_changed": true,
+    "tcl_tv_tested": false,
+    "full_unit_suite_rerun": false
+  }
+}
