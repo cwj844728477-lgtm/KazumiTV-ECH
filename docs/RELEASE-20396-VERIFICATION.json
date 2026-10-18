@@ -1,0 +1,26 @@
+{
+  "apk": "KazumiTV.apk",
+  "sha256": "7ce147494b8cf461458d341f38cf176fd084744ffcaa3375f85c23ff34b08f15",
+  "bytes": 30568703,
+  "package": "org.localtest.kazumitv.ech",
+  "versionCode": 20396,
+  "abis": [
+    "armeabi-v7a"
+  ],
+  "credentials_injected": true,
+  "same_signing_certificate": true,
+  "business_source_unchanged": 429,
+  "changed_native_libraries": [],
+  "avatar_pixels_match": true,
+  "zip_integrity": true,
+  "zipalign": true,
+  "public_release_explicitly_authorized": true,
+  "user_reported_20395_test_success": true,
+  "app_label": "KazumiTV",
+  "emulator_upgrade_install": "Success",
+  "emulator_launch": "Status: ok",
+  "installed_versionCode": 20396,
+  "installed_app_label_verified": "KazumiTV",
+  "user_feedback": "User confirmed previous authorized build 20395 worked; final 20396 is naming-only with unchanged native libraries.",
+  "full_unit_suite_rerun": false
+}

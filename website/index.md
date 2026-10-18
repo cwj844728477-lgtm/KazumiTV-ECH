@@ -1,9 +1,9 @@
 ---
 layout: default
-title: KazumiTV-ECH
+title: KazumiTV
 ---
 
-# KazumiTV-ECH
+# KazumiTV
 
 <img src="assets/avatar.png" width="144" alt="若叶睦非官方二创头像">
 
@@ -26,17 +26,17 @@ title: KazumiTV-ECH
 
 ## 弹幕服务接入状态
 
-**尚未取得本项目的弹弹play应用授权，正在准备提交申请。** 当前源码已有接口适配，但无授权构建的弹幕功能不可视为可用。
+**已接入维护者获批的弹弹play应用授权。** 节目搜索及弹幕获取接口实测均为 HTTP 200；用户确认 20395 授权包测试成功。
 
-计划接入番剧/节目搜索、播放时节目匹配及弹幕获取，仅随用户实际操作按需调用，遵循平台配额与缓存要求。不做批量抓取、数据库下载或弹幕数据收费转售。凭据由维护者受保护地注入构建，不提交到公开仓库。
+接入番剧/节目搜索、播放时节目匹配及弹幕获取，仅随用户实际操作按需调用，遵循平台配额与缓存要求。不做批量抓取、数据库下载或弹幕数据收费转售。凭据由维护者受保护地注入发布 APK，不提交到公开源码。客户端二进制不能保证凭据无法被提取，维护者已知情确认公开分发；第三方自行构建应申请自己的授权。
 
 ## 测试与发布状态
 
-原本地 ARMv7 测试包已进行模拟器安装和部分功能验证；尚未完成目标电视无代理网络下的完整验收。**现提供非官方 ARMv7 预发布测试 APK，使用 debug 证书签名，不承诺所有设备/网络均可用。**
+**现提供非官方 ARMv7 发布版：文件名 KazumiTV.apk，应用显示名称 KazumiTV。** 为保留覆盖升级兼容，继续使用此前本机 Android debug 证书签名；并非上游官方签名。用户已确认授权包测试成功，更名版保留原业务、TV操作、头像与弹幕授权。不同设备、网络和第三方视频源仍可能有差异。
 
-[下载安装包与对应源码（v0.4.2-ech.20394）](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/releases/tag/v0.4.2-ech.20394)
+[下载 KazumiTV.apk 与对应源码（20396）](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/releases/latest)
 
-应用 ID：`org.localtest.kazumitv.ech`；versionCode：`20394`。保留已能使用的原版，不要为安装测试包先卸载旧应用。
+应用 ID：`org.localtest.kazumitv.ech`；versionCode：`20396`。保留已能使用的原版，可覆盖升级此前 ECH 包，不要先卸载旧应用。
 
 ## 来源与许可
 
@@ -46,6 +46,6 @@ TV 基线提交：`554114bd444c0fea2a3c0c59557a63c99309810b`。
 
 ## 隐私与联系
 
-项目维护者不运营集中收集用户播放数据的服务器。应用会按功能连接 Bangumi、用户配置的来源、弹弹play（取得授权并使用时）以及相关网络服务；这些服务可能接收 IP、查询词及节目请求信息。详见 [隐私说明](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/PRIVACY.md)。
+项目维护者不运营集中收集用户播放数据的服务器。应用会按功能连接 Bangumi、用户配置的来源、弹弹play（使用弹幕时）以及相关网络服务；这些服务可能接收 IP、查询词及节目请求信息。详见 [隐私说明](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/blob/main/PRIVACY.md)。
 
 维护者：[@cwj844728477-lgtm](https://github.com/cwj844728477-lgtm)。请通过 [GitHub Issues](https://github.com/cwj844728477-lgtm/KazumiTV-ECH/issues) 联系，不要公开提交账号密码、AppSecret 或未脱敏日志。

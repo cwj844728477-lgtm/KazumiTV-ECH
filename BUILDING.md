@@ -1,4 +1,4 @@
-# 构建 KazumiTV-ECH
+# 构建 KazumiTV
 
 ## 环境
 
@@ -15,7 +15,7 @@ flutter build apk --release --flavor tv --target-platform android-arm
 
 `android/gradle.properties` 已启用 `kazumiTv=true`，使用独立应用 ID `org.localtest.kazumitv.ech`。不要省略 `--flavor tv`，否则不代表 TV 专用排版与焦点逻辑。
 
-未提供正式签名环境时，现有配置使用本机 Android debug keystore 为 release 构建签名。这只适用于本地测试，不是原作者签名，也不保证能覆盖其他人构建的同包名应用。不要为了安装覆盖包而先删除现有数据。
+未提供正式签名环境时，现有配置使用本机 Android debug keystore 为 release 构建签名。20396 发布包沿用此前本机 debug 证书以保持覆盖升级兼容；不是原作者签名，也未迁移新的生产签名密钥，不保证能覆盖其他人构建的同包名应用。不要为了安装覆盖包而先删除现有数据。
 
 ## 获得自己的弹弹play应用授权后
 
@@ -28,6 +28,8 @@ flutter build apk --release --flavor tv --target-platform android-arm --dart-def
 上述路径只是示例，请换成自己的受保护文件。无有效授权时自动匹配和手动弹幕搜索仍可能失败；取得授权后应分别实测搜索、节目匹配和可见弹幕，并遵守获批配额。
 
 ## 测试与验收边界
+
+20395 已注入维护者授权，节目搜索及弹幕接口均 HTTP 200，样本取得 2891 条弹幕；用户随后确认测试成功。20396 为同一授权版本的显示名称清理，应用名 KazumiTV，文件名 KazumiTV.apk；其 APK 校验及模拟器记录见 `docs/RELEASE-20396-VERIFICATION.json`。用户反馈与自动化检测分别记录，不推导为所有设备/网络均已验收。
 
 v0.4.2-ech.20394 已完成 release TV ARMv7 构建、ZIP/ELF/签名/16KB zipalign 检查、APK 图标解码像素比对，以及 MuMu 模拟器覆盖安装、启动与方向键焦点移动检查。429 个 `lib/` 文件及 8 个原生库均与之前的 20393 测试包对应源码/库保持不变；更新仅涉及图标资源、版本号与说明。未重跑全量 Flutter/native 单元测试，也未完成 TCL 真机无代理网络验收。
 
